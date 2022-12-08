@@ -3,7 +3,7 @@ package br.edu.dio.poo.pedraPapelTesoura.data;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Choice {
+public abstract class Choice {
     protected int choicePlayer() {
         Scanner scanner = new Scanner(System.in);
         int choice = 0;

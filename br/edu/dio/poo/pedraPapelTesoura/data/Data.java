@@ -1,24 +1,9 @@
 package br.edu.dio.poo.pedraPapelTesoura.data;
 
-public class Data {
-    Player player = new Player(null, 0);
-    Player ia = new Player("IA", 0);
+public abstract class Data extends Choice {
+    protected Player player = new Player(null, 0);
+    private Player ia = new Player("IA", 0);
     protected int rounds;
-
-    protected int choicePlayer() {
-        Choice choicePlayer = new Choice();
-        return choicePlayer.choicePlayer();
-    }
-
-    protected int choiceIA() {
-        Choice choiceIA = new Choice();
-        return choiceIA.choiceIA();
-    }
-
-    protected String showChoice(int choice) {
-        Choice showChoice = new Choice();
-        return showChoice.showChoice(choice);
-    }
 
     protected void inGame() {
         System.out.println("\n******* SEJA BEM-VINDO(A), " + player.getPlayer() + " *******\n");
